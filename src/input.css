@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer  {
+  .barra::after{
+    content: '';
+    height: 1px;
+    align-self: center;
+    @apply bg-white3;
+  }
+}
+@layer  {
+  .barra{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5rem;
+  }
+  .dark .barra::after{
+    @apply bg-black4;
+  
+}
+}
+
+@layer{
+    .custom-list li::marker{
+        @apply text-purple
+    }
+}
+
+@layer{
+  .btn--play:hover g{
+    fill: #A445ED;
+  }
+}
+
+
+@layer{
+  .toogle{
+    top:9%;
+    left:9%;
+    transition: all 0.5s ease;
+  }
+}
+@layer{
+  .toogle.active{
+    left:50%
+  }
+}
+
+@layer{
+  .container--fonts{
+    top: 123%;
+    right: -26%;
+  }
+}
+
+@layer{
+  .position--search{
+    top: 29%;
+    right: 4%;
+  }
+}
