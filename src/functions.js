@@ -146,7 +146,7 @@ function renderError(error) {
 
         <h2 class="text-black3 text-2xl dark:text-white1">No Definitions Found</h2>
 
-        <p class="text-errror text-lg dark:text-white1">${error}</p>
+        <p class="text-mesError text-lg dark:text-white1">${error}</p>
     
     </section>
     `
